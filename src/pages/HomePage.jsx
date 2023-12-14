@@ -30,35 +30,35 @@ function HomePage({isLoading}) {
           <a href="https://instagram.com/this.mide">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100 min-h-full min-w-full"
-              src="public/social-icon-instagram.svg"
+              src="/social-icon-instagram.svg"
               alt="social-icon-instagram"
             />
           </a>
           <a href="https://github.com/unusualmide">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100"
-              src="public/social-icon-github.svg"
+              src="/social-icon-github.svg"
               alt="social-icon-github"
             />
           </a>
           <a href="https://www.linkedin.com/in/ajilogba-ayomide-090479280">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100"
-              src="public/social-icon-linkedin.svg"
+              src="/social-icon-linkedin.svg"
               alt="social-icon-linkedin"
             />
           </a>
           <a href="https://twitter.com/unusualmide321">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100"
-              src="public/social-icon-twitter.svg"
+              src="/social-icon-twitter.svg"
               alt="social-icon-twitter"
             />
           </a>
           <a href="">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100"
-              src="public/social-icon-youtube.svg"
+              src="/social-icon-youtube.svg"
               alt="social-icon-youtube"
             />
           </a>
@@ -76,7 +76,7 @@ function HomePage({isLoading}) {
           <a href="mailto:ajilogbaayomide34@gmail.com">
             <img
               className="transition duration-300 opacity-50 w-7 hover:opacity-100"
-              src="public/send-email.png"
+              src="/send-email.png"
               alt="send-email"
             />
           </a>

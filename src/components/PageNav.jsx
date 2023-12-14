@@ -59,7 +59,7 @@ function PageNav() {
       <NavLink to="/">
       <img
       className=" w-[130px] mr-auto object-contain absolute top-[-1%] sm:top-[2%] left-[-4%] sm:left-[0.1%] opacity-80"
-      src="public/my-logo.png"
+      src="/my-logo.png"
       alt="portfolio-image"
     />
       </NavLink>

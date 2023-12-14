@@ -12,7 +12,7 @@ export default {
         'box1': "url('/public/dtl_box1.jpg')",
         'box2': "url('/public/dtl_box2.jpg')",
         'box3': "url('/public/dtl_box3.jpg')",
-        'portfolio-image': "url('/public/portfolio-image.png')",
+        'portfolio-image': "url('/portfolio-image.png')",
       },
 
       colors: {
