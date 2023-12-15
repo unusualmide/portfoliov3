@@ -7,11 +7,11 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'strength': "url('/public/counter-bg.jpg')",
-        'html': "url('/public/html&css-logo.png')",
-        'box1': "url('/public/dtl_box1.jpg')",
-        'box2': "url('/public/dtl_box2.jpg')",
-        'box3': "url('/public/dtl_box3.jpg')",
+        'strength': "url('/counter-bg.jpg')",
+        'html': "url('/html&css-logo.png')",
+        'box1': "url('/dtl_box1.jpg')",
+        'box2': "url('/dtl_box2.jpg')",
+        'box3': "url('/dtl_box3.jpg')",
         'portfolio-image': "url('/portfolio-image.png')",
       },
 
