@@ -143,3 +143,18 @@ body{
 	}
 }
 
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #F6483B;
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #111111;
+}

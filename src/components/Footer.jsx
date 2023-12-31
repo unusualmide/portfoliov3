@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 function Footer() {
   return (
   
-    <footer className="flex flex-col items-center justify-center gap-5 px-24 py-8 sm:flex-row mt-14 bg-exp-color">
+    <footer className="flex flex-col items-center justify-center gap-5 px-24 py-8 sm:flex-row mt-24 bg-exp-color">
       <p className="text-[13px] text-center text-white sm:text-base sm:mr-auto whitespace-nowrap">
         Copyright &copy; 2023 Portfolio. All Rights Reserved
       </p>

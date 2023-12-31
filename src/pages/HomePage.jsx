@@ -5,17 +5,36 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Navigation from "../components/Navigation";
 import PageNav from "../components/PageNav";
 import Loader from "./Loader";
+import { useNavigation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 
 
 
 
-function HomePage({isLoading}) {
-  //  const [isOpen, setIsOpen] = useState(true);
+function HomePage({isOpen}) {
 
-  // function openNav() {
-  //   setIsOpen(show => !show)
-  
+  const navigation = useNavigation()
+  const [isLoading, setIsLoading] = useState(false);
+
+useEffect(() => {
+  function fetchData () {
+    if (navigation.state === 'idle') {
+      setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1700);
+    }
+    
+  };
+
+  fetchData();
+
+  return () => {
+    clearTimeout(); 
+  };
+}, []);
+
   
   const [text] = useTypewriter({
     words: ["a Frontend Developer.", "a Web Developer."],
@@ -23,15 +42,17 @@ function HomePage({isLoading}) {
   });
 
   return (
+    
  isLoading ? <Loader/> : <>
       <Navigation />
-      <main className="h-screen  bg-black bg-bottom sm:bg-right-bottom bg-no-repeat bg-[length:570px_500px] bg-portfolio-image flex flex-col sm:flex-row justify-center items-center p-12">
+      <main className="h-screen  bg-all-bg bg-bottom sm:bg-right-bottom bg-no-repeat bg-[length:570px_500px] bg-portfolio-image flex flex-col sm:flex-row justify-center items-center p-12 bg-fixed overflow-hidden">
         <div className="flex flex-row items-center justify-center gap-5 sm:flex-col">
           <a href="https://instagram.com/this.mide">
             <img
               className="w-[23px] transition duration-300 opacity-50 hover:opacity-100 min-h-full min-w-full"
               src="/social-icon-instagram.svg"
               alt="social-icon-instagram"
+              
             />
           </a>
           <a href="https://github.com/unusualmide">

@@ -3,13 +3,54 @@ import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Strength from "./pages/Strength";
 import PageNotFound from "./pages/PageNotFound";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Contact from "./pages/Contact";
 import PageNav from "./components/PageNav";
-import { useEffect, useState } from "react";
 
 
-function App() {
+
+
+const router = createBrowserRouter([
+
+
+  {
+    path: "/",
+    element: <HomePage />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/portfolio",
+    element: <Portfolio />,
+  },
+  {
+    path: "/strength",
+    element: <Strength />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/pagenav",
+    element: <PageNav />,
+  },
+  {
+    path: "*",
+    element: <PageNotFound />,
+  },
+]);
+
+function App(){ 
+  return  <RouterProvider router={router} />;
+}
+
+export default App;
+
+{
+  /*function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -41,7 +82,8 @@ function App() {
   );
 }
 
-export default App;
+export default App;    */
+}
 
 //<Route path="about"  element={<About />}/>
 //<Route path="portfolio"  element={<Portfolio />}/>

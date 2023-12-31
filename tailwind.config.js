@@ -21,6 +21,7 @@ export default {
         "hover-text": '#b7b7b7',
         "exp-color": '#111111', 
          "all-bg": '#101010',
+        "nav-color": '#020202,  '
       }
     },
   },

@@ -2,11 +2,54 @@ import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Loader from "./Loader";
 import { Reveal } from "../components/Reveal";
+import { useNavigation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
-function Strength({isLoading}) {
+function Strength() {
+
+  const navigation = useNavigation()
+  const [isLoading, setIsLoading] = useState(false);
+
+useEffect(() => {
+  function fetchData () {
+    if (navigation.state === 'idle') {
+      setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1700);
+    }
+    
+  };
+
+  fetchData();
+
+  return () => {
+    clearTimeout(); 
+  };
+}, []);
+
+
+const pathVariants = {
+  hidden: {
+    opacity: 0,
+    pathLength: 0,
+  },
+  visible: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 2,
+      ease: "easeInOut"
+    },
+  }
+}
+
+  
   return (
    isLoading ? <Loader /> : <div className="w-full h-full bg-all-bg">
      <Navigation />
+     
      <div className="flex items-center justify-center">
      <Reveal>
         <div className="flex flex-col items-center justify-center pt-28">
@@ -20,7 +63,7 @@ function Strength({isLoading}) {
             </p>
           </div>
         </div>
-      </Reveal>
+        </Reveal>
       </div>
       <div className="grid grid-cols-1 pt-2 sm:grid-cols-2 ">
       <Reveal>
@@ -33,7 +76,7 @@ function Strength({isLoading}) {
           />  
         </div>
         </Reveal>
-        <div className="grid grid-flow-row grid-cols-1 sm:pr-32 sm:grid-cols-2 gap-y-5 sm:gap-x-5">
+        <div className="grid grid-flow-row grid-cols-1  sm:pr-32 sm:grid-cols-2 gap-y-5 sm:gap-x-5 pt-7 sm:pt-14">
           <Reveal>     
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <img
@@ -127,12 +170,13 @@ function Strength({isLoading}) {
             stroke-width="8"
             d="M 99.98044737244527 4.000001991173164 A 96 96 0 1 1 99.86665792594512 4.000092604777535 Z"
           ></path>
-          <path
+          <motion.path variants={pathVariants} initial='hidden' 
+            animate='visible'
             fill="transparent"
             stroke="#00c8ff"
             stroke-width="8"
             d="M 99.98044737244527 4.000001991173164 A 96 96 0 1 1 43.489510975495364 22.394815700165097 "
-          ></path>
+          ></motion.path>
         
         </svg>
         <h4 className="text-white ">Html & Css</h4>

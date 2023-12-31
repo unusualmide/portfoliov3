@@ -5,7 +5,7 @@ function Education() {
     <div className="">
       <div className="flex items-center justify-center">
         <Reveal>
-        <div className="flex flex-col items-center justify-center pt-14">
+        <div className="flex flex-col items-center justify-center pt-24 sm:pt-36 pb-8">
           <h1 className="text-[42px] leading-tight font-bold text-white">
             EDUCATION
           </h1>
@@ -18,12 +18,13 @@ function Education() {
       </div>
 
       <ul className="flex flex-col pl-3 pr-3 sm:pl-32 sm:pr-28 gap-11">
-
+      
         <li className="flex items-end justify-end w-full pt-9">
           <div className="flex items-center justify-center gap-9">
             <h2 className="text-6xl font-medium text-white/20 before:content-[''] before:border before:p-1 before:mr-3 before:rounded-full before:inline-block before:relative before:-top-3 before:ring-2 before:ring-slate-50 hover:text-primary-color before:hover:ring-primary-color before:hover:ring-2 hover:scale-110 hover:transition-transform hover:duration-500">
               2016
             </h2>
+            <Reveal>
             <div className="text-white ">
               <h3 className="text-lg">Diploma in Office and Graphics Package</h3>
               <p className="text-base">Lagos State</p>
@@ -31,12 +32,14 @@ function Education() {
                 Hands-On Computer Academy
               </p>
             </div>
+            </Reveal>
           </div>
         </li>
-      
+    
         
         <li className="flex items-start justify-start text-end pt-9">
           <div className="flex items-center justify-center gap-9">
+            <Reveal>
             <div className="text-white ">
               <h3 className="text-lg">Senior Secondary School Cert</h3>
               <p className="text-base">Lagos State</p>
@@ -44,6 +47,7 @@ function Education() {
                 Federal Science and Technical College
               </p>
             </div>
+            </Reveal>
             <h2 className="text-6xl font-medium text-white/20 after:content-[''] after:border after:p-1 after:ml-3 after:rounded-full after:inline-block after:relative after:-top-3 after:ring-2 after:ring-slate-50 hover:text-primary-color after:hover:ring-primary-color after:hover:ring-2 hover:scale-110 hover:transition-transform hover:duration-500">
               2019
             </h2>
@@ -55,6 +59,7 @@ function Education() {
             <h2 className="text-6xl font-medium text-white/20 before:content-[''] before:border before:p-1 before:mr-3 before:rounded-full before:inline-block before:relative before:-top-3 before:ring-2 before:ring-slate-50 hover:text-primary-color before:hover:ring-primary-color before:hover:ring-2 hover:scale-110 hover:transition-transform hover:duration-500">
               2023
             </h2>
+            <Reveal>
             <div className="text-white ">
               <h3 className="text-lg">Website Development and Debugging</h3>
               <p className="text-base">Lagos State</p>
@@ -62,20 +67,23 @@ function Education() {
                Apt Learn
               </p>
             </div>
+            </Reveal>
           </div>
         </li>
 
         <li className="flex items-start justify-start text-end pt-9">
           <div className="flex items-center justify-center gap-9">
+            <Reveal>
             <div className="text-white ">
-              <h3 className="text-lg">Website Development</h3>
+              <h3 className="text-lg ">Bachelor's in Transport/Logistics</h3>
               <p className="text-base">Lagos State</p>
               <p className="pt-4 font-medium text-hover-text">
-              Federal Science and Technical College
+              Lagos State University LASU
               </p>
             </div>
+            </Reveal>
             <h2 className="text-6xl font-medium text-white/20 content-[''] after:border after:p-1 after:ml-3 after:rounded-full after:inline-block after:relative after:-top-3 after:ring-2 after:ring-slate-50 hover:text-primary-color after:hover:ring-primary-color after:hover:ring-2 hover:scale-110 hover:transition-transform hover:duration-500">
-              2004
+              2024
             </h2>
           </div>
         </li>
