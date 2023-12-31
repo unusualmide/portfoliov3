@@ -45,7 +45,7 @@ useEffect(() => {
       <div className="flex items-center justify-center flex-col sm:flex-row pt-[70px] pr-[2%] pb-[40px] pl-[1.5%]">
         
         <div className="sm:relative w-[90%] sm:w-[40%]">
-        <img className="block bg-cover bg-none " src="public/personal-portfolio.png" placeholder="blur" alt="personal-portfolio-image"/>
+        <img className="block bg-cover bg-none " src="/personal-portfolio.png" placeholder="blur" alt="personal-portfolio-image"/>
         </div>
         <div className="w-[90%] sm:w-[40%] pl-[1%]  mt-3 sm:mt-[160px]  sm:mr-[1%] mb-[1%] sm:ml-[-40px] sm:z-30 opacity-100  bg-black py-2.5">
           <h2 className="p-5 text-3xl font-normal transition-all duration-[4s] ease-in text-primary-color">Ayomide Ajilogba - v1</h2>
