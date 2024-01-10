@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation";
 import Loader from "./Loader";
 import { useEffect, useState } from "react";
 import { Reveal } from "../components/Reveal";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+
 
 function Contact() {
   const navigation = useNavigation();
@@ -34,7 +34,7 @@ function Contact() {
       <Navigation />
       <div className="flex flex-col items-center justify-center">
         <Reveal>
-          <div className=" pt-32 sm:pt-20 pb-5">
+          <div className="pt-32 pb-5 sm:pt-20">
             <h1 className="whitespace-nowrap text-[36px] sm:text-[42px] leading-tight font-bold text-white">
               GET IN TOUCH
             </h1>
@@ -87,24 +87,8 @@ function Contact() {
             </button>
           </Reveal>
         </form>
-        <div className="border ">
+        <div className="overflow-hidden bg-gray-500 border">
           <p>Gigs</p>
-       {/*  <MapContainer 
-            center={[51.505, -0.09]}
-            zoom={13}
-            scrollWheelZoom={false}
-            className=""
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            <Marker position={[51.505, -0.09]}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
-            </Marker>
-          </MapContainer> */}
         </div>
       </div>
       <div className="flex flex-col items-center justify-center px-3 pt-24 sm:px-0 sm:flex-row gap-7">

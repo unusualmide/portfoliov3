@@ -47,14 +47,18 @@ function AboutMe() {
         <div className="flex gap-4 pt-10 sm:pt-5">
           <Reveal>
           <button className="px-5 py-3 text-sm text-white transition-colors duration-500 border-none bg-primary-color hover:bg-hover ring-1 ring-primary-color focus:outline-none focus:bg-hover">
+            <a href="https://drive.google.com/file/d/1vCcL3f0e_5lWvDlh-8yNzVrbc3c_0gBw/view?usp=sharing"> 
             Download Resume
+            </a>
           </button>
           </Reveal> 
           <Reveal>
 
          
-          <button className="px-5 py-3 text-sm text-white transition-colors duration-500 border-none bg-primary-color hover:bg-hover ring-1 ring-primary-color focus:outline-none focus:bg-hover">
+          <button  className="px-5 py-3 text-sm text-white transition-colors duration-500 border-none bg-primary-color hover:bg-hover ring-1 ring-primary-color focus:outline-none focus:bg-hover">
+            <a target="blank" href="https://portfoliov3-rosy.vercel.app/">
             Hire Me
+            </a>
           </button>
           </Reveal>
         </div>
